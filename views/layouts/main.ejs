@@ -1,38 +1,74 @@
 <html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <title>Daivic : <%= title %></title>
 
-  <title>Daivic : <%= title %></title>
+    <!-- slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
+    />
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+  </head>
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-</head>
-
-<body>
-    <%- include('../partials/header.ejs') %>
-   <%- body %>
-   <%- include('../partials/footer.ejs') %>
-    <script type="text/javascript" src="javascripts/jquery-3.4.1.min.js"></script>
+  <body>
+    <%- include('../partials/header.ejs') %> <%- body %> <%-
+    include('../partials/footer.ejs') %>
+    <script
+      type="text/javascript"
+      src="javascripts/jquery-3.4.1.min.js"
+    ></script>
     <script type="text/javascript" src="javascripts/bootstrap.js"></script>
-</body>
+    <script>
+      const dropdown = document
+        .querySelector(".dropdown")
+        .addEventListener("mouseover", () => {
+          const hoverMenu = document.querySelector(".dropdown-content");
+          hoverMenu.style.display = "block";
+        });
+      const dropdown2 = document
+        .querySelector(".dropdown-content")
+        .addEventListener("mouseover", () => {
+          const hoverMenu = document.querySelector(".dropdown-content");
+          hoverMenu.style.display = "block";
+        });
+      const dropdownLeave = document
+        .querySelector(".dropdown")
+        .addEventListener("mouseleave", () => {
+          const hoverMenu = document.querySelector(".dropdown-content");
+          hoverMenu.style.display = "none";
+        });
+      const dropdownLeave2 = document
+        .querySelector(".dropdown-content")
+        .addEventListener("mouseleave", () => {
+          const hoverMenu = document.querySelector(".dropdown-content");
+          hoverMenu.style.display = "none";
+        });
+    </script>
+  </body>
 </html>

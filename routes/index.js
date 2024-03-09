@@ -14,5 +14,12 @@ router.get('/service', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
 });
+router.get('/news', function(req, res, next) {
+  res.render('news', { title: 'News' });
+});
+router.get('/asicdesign', function(req, res, next) {
+  res.render('asic-design', { title: 'News' });
+});
+
 
 module.exports = router;
