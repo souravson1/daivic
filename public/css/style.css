@@ -148,7 +148,6 @@ a:focus {
 
 .navbar-brand,
 .navbar-brand:hover {
-  text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
 }

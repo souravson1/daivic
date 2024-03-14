@@ -20,6 +20,12 @@ router.get('/news', function(req, res, next) {
 router.get('/asicdesign', function(req, res, next) {
   res.render('asic-design', { title: 'News' });
 });
+router.get('/analog', function(req, res, next) {
+  res.render('analog-design', { title: 'News' });
+});
+router.get('/physical', function(req, res, next) {
+  res.render('physical-design', { title: 'News' });
+});
 
 
 module.exports = router;
